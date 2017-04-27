@@ -32,8 +32,24 @@ def display_main_menu(my_list):
     >>> """
 
     while True:
+
+        # display options
+        print user_options
+
+        # and save user input to a variable
+        response = raw_input()
+
+        # if the response was 'A', append to the list
+        if response == 'A':
+            add_to_list(my_list)
+
+        if response == 'B':
+            view_list(my_list)
+
+        if response == 'C':
+            print "Goodbye"
         # Collect input and include your if/elif/else statements here.
-        break
+            break
 
 #-------------------------------------------------
 
